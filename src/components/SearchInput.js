@@ -7,8 +7,9 @@ const SearchInput = props => {
     }
 
     return (
-        <div>
-            <input type="text" onChange={handleChange} />
+        <div className="input_wrapper">
+            <h3 className="input_label">Rick and Morty characters finder</h3>
+            <input type="text" onChange={handleChange} className="input_search" />
         </div>
     )
 }
