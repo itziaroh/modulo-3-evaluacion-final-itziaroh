@@ -1,10 +1,11 @@
 import React from 'react';
-import '../styles/App.css';
+import '../styles/App.scss';
 import { Route, Switch } from 'react-router-dom';
 import { fetchCharacters, fetchDetail } from '../services/Api'
 import SearchInput from './SearchInput';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
+import Header from './Header';
 
 
 class App extends React.Component {
@@ -51,6 +52,7 @@ class App extends React.Component {
       <div className="App">
         <Switch>
           <Route exact path='/'>
+            <Header />
             <SearchInput
               handleChange={this.handleChange}
             />

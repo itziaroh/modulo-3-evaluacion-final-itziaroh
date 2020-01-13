@@ -1,0 +1,11 @@
+.header{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    &_logo{
+        height: rem(70);
+        margin-top: rem(20);
+    }
+}
