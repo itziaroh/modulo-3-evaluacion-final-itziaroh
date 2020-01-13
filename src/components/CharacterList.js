@@ -1,7 +1,9 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
 
+
 const CharacterList = props => {
+
     const searchValue = props.searchValue.toLowerCase()
     return (
         <ul>
@@ -11,9 +13,7 @@ const CharacterList = props => {
                     return (
                         <li key={character.id}>
                             <CharacterCard
-                                imgUrl={character.image}
-                                name={character.name}
-                                specie={character.species}
+                                character={character}
                             />
                         </li>
                     )

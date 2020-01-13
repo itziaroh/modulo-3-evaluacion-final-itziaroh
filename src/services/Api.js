@@ -1,5 +1,8 @@
-const ENDPOINT = 'https://rickandmortyapi.com/api/character/';
+const CHARACTERLIST = 'https://rickandmortyapi.com/api/character/';
+const CHARACTERINFO = 'https://rickandmortyapi.com/api/character/'
 
-const fetchCharacters = () => fetch(ENDPOINT).then(response => response.json());
+const fetchCharacters = () => fetch(CHARACTERLIST).then(response => response.json());
 
-export { fetchCharacters };
+const fetchDetail = (id) => fetch(CHARACTERINFO + id).then(response => response.json());
+
+export { fetchCharacters, fetchDetail };
