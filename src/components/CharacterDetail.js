@@ -13,7 +13,7 @@ const CharacterDetail = props => {
                     <p className="character_card-status">Status: {status}</p>
                     <p className="character_card-specie">Species: {species}</p>
                     {/* <p>Origin: {origin.name}</p>
-                <p>Episodes: {episode.length}</p> */}
+                    <p>Episodes: {episode.length}</p> */}
                 </div>
             </div>
         </div>

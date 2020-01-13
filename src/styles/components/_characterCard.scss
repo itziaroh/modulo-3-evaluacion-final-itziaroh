@@ -1,0 +1,30 @@
+.character{
+    &_wrapper{
+        background-color: $blue;
+        width: rem(150);
+        height: rem(190);
+        border-radius: rem(12);
+        display: flex;
+        justify-content: center;
+        margin: rem(10) 0 rem(10) rem(5);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &_img{
+        width: rem(100);
+        height: rem(100);
+        margin-top: rem(20);
+        border-radius: 50%;
+        align-self: center;
+    }
+    &_name{
+        color:$light-green;
+        font-size: rem(16);
+        margin-top: rem(5);
+    }
+    &_specie{
+        color:$white;
+        margin-bottom: rem(20);
+        font-size: rem(13);
+    }
+}

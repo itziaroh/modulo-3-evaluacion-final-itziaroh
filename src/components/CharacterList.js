@@ -6,12 +6,12 @@ const CharacterList = props => {
 
     const searchValue = props.searchValue.toLowerCase()
     return (
-        <ul>
+        <ul className="character_list">
             {props.allCharacters
                 .filter(character => searchValue === '' || character.name.toLowerCase().includes(searchValue))
                 .map(character => {
                     return (
-                        <li key={character.id}>
+                        <li key={character.id} className="character_item">
                             <CharacterCard
                                 character={character}
                             />

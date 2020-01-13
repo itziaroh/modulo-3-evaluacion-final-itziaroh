@@ -16,6 +16,7 @@
     color: $blue;
     text-transform: uppercase;
     align-self: center;
+    font-size: rem(14);
     @include for-tablet-up{
         font-size: rem(28);
     }
