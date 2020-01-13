@@ -5,6 +5,7 @@ const SearchInput = props => {
     const handleChange = (e) => {
         props.handleChange(e.target.value)
     }
+
     return (
         <div>
             <input type="text" onChange={handleChange} />

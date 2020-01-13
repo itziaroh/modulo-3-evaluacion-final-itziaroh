@@ -34,6 +34,7 @@ class App extends React.Component {
         />
         <CharacterList
           allCharacters={this.state.allCharacters}
+          searchValue={this.state.searchValue}
         />
       </div>
     );
