@@ -3,9 +3,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    @include for-tablet-up{
+        height: 20vh;
+    }
     
     &_logo{
         height: rem(70);
         margin-top: rem(20);
+        @include for-tablet-up{
+            height: rem(120);
+            margin-top: rem(40);
+        }
     }
 }

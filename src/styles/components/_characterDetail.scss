@@ -16,6 +16,14 @@
         flex-direction: column;
         border-radius: rem(7);
         margin-top: rem(35);
+        @include for-tablet-up{
+            flex-direction: row;
+            width: 65%;
+            height: rem(300);
+        }
+        @include for-desktop-up{
+            height: rem(350); 
+        }
     }
     
     &-image{
@@ -24,6 +32,16 @@
         margin-top: rem(20);
         border-radius: 50%;
         align-self: center;
+        @include for-tablet-up{
+            width: rem(200);
+            height: rem(200);
+            margin-top: rem(0);
+            margin-left: rem(30);
+        }
+        @include for-desktop-up{
+            width: rem(250);
+            height: rem(250);
+        }
     }
 }
 .character_card{
@@ -31,17 +49,33 @@
         display: flex;
         flex-direction: column;
         padding-left: rem(20);
+        @include for-tablet-up{
+            padding-left: rem(30);
+            align-self: center;
+        }
+        @include for-desktop-up{
+            padding-left: rem(60);
+        }
     }
     &-name{
         color:$light-green;
         padding-top: rem(20);
         font-size: rem(22);
+        @include for-tablet-up{
+            padding-top: rem(0);
+            font-size: rem(30);  
+        }
+        @include for-desktop-up{
+            font-size: rem(50);
+        }
     }
-    &-status{
+    &-status, &-specie{
         color:$white;
+        @include for-tablet-up{
+            font-size: rem(20);
+        }
+        @include for-desktop-up{
+            font-size: rem(30);
+        }
     }
-    &-specie{
-        color:$white;
-    }
-
 }
