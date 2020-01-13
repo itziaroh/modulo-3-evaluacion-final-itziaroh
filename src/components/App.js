@@ -21,7 +21,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <CharacterList />
+        <CharacterList
+          allCharacters={this.state.allCharacters}
+        />
       </div>
     );
   }
