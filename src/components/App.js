@@ -1,8 +1,11 @@
 import React from 'react';
 import '../styles/App.css';
+import { Route, Switch } from 'react-router-dom';
 import { fetchCharacters } from '../services/Api'
-import CharacterList from './CharacterList';
 import SearchInput from './SearchInput';
+import CharacterList from './CharacterList';
+import CharacterDetail from './CharacterDetail';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -29,13 +32,18 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <SearchInput
-          handleChange={this.handleChange}
-        />
-        <CharacterList
-          allCharacters={this.state.allCharacters}
-          searchValue={this.state.searchValue}
-        />
+        <Switch>
+          <Route exact path='/'>
+            <SearchInput
+              handleChange={this.handleChange}
+            />
+            <CharacterList
+              allCharacters={this.state.allCharacters}
+              searchValue={this.state.searchValue}
+            />
+          </Route>
+          <Route path='/character' component={CharacterDetail} />
+        </Switch>
       </div>
     );
   }
