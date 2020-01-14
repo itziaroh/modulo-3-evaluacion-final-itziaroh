@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 
 const CharacterDetail = props => {
     const { image, name, status, species, origin, episode } = props.character;
@@ -7,6 +8,7 @@ const CharacterDetail = props => {
     return (
         <div className="detail-wrapper">
             <Header />
+            <Link to={'/character/'} className="back_btn">Back</Link>
             <div className="character_detail-card">
                 <img src={image} alt={name} className="character_detail-image" />
                 <div className="character_card-info">
@@ -17,7 +19,7 @@ const CharacterDetail = props => {
                     <p>Episodes: {episode.length}</p> */}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
