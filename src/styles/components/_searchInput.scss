@@ -5,7 +5,7 @@
     height: 25px;
     margin: rem(30) 0 rem(40) 0;
     @include for-tablet-up{
-        margin: rem(90) 0 rem(60) 0;
+        margin: rem(20) 0 rem(60) 0;
     }
     @include for-desktop-up{
         margin: rem(95) 0 rem(80) 0;
@@ -16,9 +16,11 @@
     color: $blue;
     text-transform: uppercase;
     align-self: center;
-    font-size: rem(14);
+    font-size: rem(10);
+    font-family: $seymour;
     @include for-tablet-up{
-        font-size: rem(28);
+        font-size: rem(24);
+        margin-bottom: rem(20);
     }
     @include for-desktop-up{
         font-size: rem(34);
@@ -28,8 +30,11 @@
 .input_search{
     width: rem(300);
     align-self: center;
+    border: 2px solid $dark-blue;
+    border-radius: rem(5);
     @include for-tablet-up{
         width: rem(350);
+        height: rem(50);
     }
     @include for-tablet-up{
         width: rem(400);

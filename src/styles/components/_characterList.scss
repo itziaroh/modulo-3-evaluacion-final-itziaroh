@@ -3,6 +3,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
+        @include for-tablet-up{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include for-desktop-up{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
     }
     &item{
         margin: 0;
