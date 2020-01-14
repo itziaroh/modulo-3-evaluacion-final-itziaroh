@@ -7,7 +7,7 @@ Made by Itziar Ortega from Hamilton promotion.
 
 # About the project.
 
-![](https://gph.is/g/aeYxAor)
+![Alt Text](https://media.giphy.com/media/cODrlNTkGnZGVtVagd/giphy.gif)
 
 This project is a finder for characters from the Rick and Morty series.
 You can search characters by their name typing it on the search input. Also, you can click on a character if you want to see more information about that character.
