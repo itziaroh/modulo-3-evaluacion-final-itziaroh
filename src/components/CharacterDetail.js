@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from './Header';
 import { Link } from 'react-router-dom';
 
@@ -22,5 +23,9 @@ const CharacterDetail = props => {
         </div >
     )
 }
+
+CharacterDetail.propTypes = {
+    character: PropTypes.object
+};
 
 export default CharacterDetail;

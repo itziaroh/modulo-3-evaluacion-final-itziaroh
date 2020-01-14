@@ -1,11 +1,11 @@
-# Module 3 Final Review.
+# Module 3 Final Review. 📝
 
 This is the final review of the last module of the front-end developer bootcamp of Adalab.
 
 Made by Itziar Ortega from Hamilton promotion.
 
 
-# About the project.
+# About the project. 📚
 
 ![Alt Text](https://media.giphy.com/media/cODrlNTkGnZGVtVagd/giphy.gif)
 

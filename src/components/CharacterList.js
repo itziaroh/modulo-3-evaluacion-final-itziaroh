@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import CharacterCard from './CharacterCard';
 
 
@@ -21,5 +22,10 @@ const CharacterList = props => {
         </ul>
     )
 }
+
+CharacterList.propTypes = {
+    searchValue: PropTypes.string,
+    allCharacters: PropTypes.array
+};
 
 export default CharacterList;

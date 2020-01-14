@@ -29,9 +29,13 @@
 
 .input_search{
     width: rem(300);
+    height: rem(35);
     align-self: center;
     border: 2px solid $dark-blue;
-    border-radius: rem(5);
+    border-radius: rem(15);
+    padding: rem(8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: rem(15);
     @include for-tablet-up{
         width: rem(350);
         height: rem(50);

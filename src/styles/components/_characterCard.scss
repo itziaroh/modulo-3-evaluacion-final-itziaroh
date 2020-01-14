@@ -19,16 +19,12 @@
         }
     }
     &_img{
-        &-wrapper{
-            margin-top: rem(20); 
-            width: rem(102);   
-            
-        }
         &-photo{
             width: rem(102);
             height: rem(102);
             border-radius: 50%;
             border: 2px solid $dark-blue;
+            margin-bottom: rem(10);
             @include for-tablet-up{
                 width: rem(132);
                 height: rem(132);

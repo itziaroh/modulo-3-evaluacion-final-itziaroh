@@ -2,16 +2,24 @@
     &list{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
+        grid-template-rows: 1fr;
+        grid-gap: rem(5);
+        padding: rem(8);
         @include for-tablet-up{
             grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: rem(5);
+            padding: rem(8);
         }
         @include for-desktop-up{
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: rem(5);
         }
     }
     &item{
-        margin: 0;
-        justify-self: center;
+        text-align: center;
+        margin: rem(9);
+        @include for-desktop-up{
+            margin:rem(20);
+        }
     }
 }
