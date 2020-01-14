@@ -6,9 +6,8 @@
         border-radius: rem(12);
         display: flex;
         justify-content: center;
-        margin: rem(10) 0 rem(10) rem(5);
-        margin-top: 10px;
-        margin-bottom: 10px;
+        align-self: center;
+        margin: rem(10) 0 rem(10) 0;
     }
     &_img{
         width: rem(100);
